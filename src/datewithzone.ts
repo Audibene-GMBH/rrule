@@ -40,9 +40,9 @@ export class DateWithZone {
 
       return rezoned.toJSDate()
     } catch (e) {
-      if (e instanceof TypeError) {
-        console.error('Using TZID without Luxon available is unsupported. Returned times are in UTC, not the requested time zone')
-      }
+//       if (e instanceof TypeError) {
+//         console.error('Using TZID without Luxon available is unsupported. Returned times are in UTC, not the requested time zone')
+//       }
       return this.date
     }
   }
